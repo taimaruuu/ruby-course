@@ -8,5 +8,10 @@ p arr.select { |element| element % 3 == 0 }
 
 # Using `reject` method filter out anything less than 5000
 # and use `sort` and `reverse` methods to sort in descending order
-# Start with the line below and continue as 1 long method chain
-# p arr.select { |element| element % 3 == 0 }
+
+# are from an array of numbers 1..10000 inclusive
+# are divisible by 3 (i.e., element % 3 == 0)
+# are not less than 5000
+# sorted in reverse order
+
+p (1..10000).select { |element| element % 3 == 0 }.reject { |element| element < 5000 }.sort.reverse
